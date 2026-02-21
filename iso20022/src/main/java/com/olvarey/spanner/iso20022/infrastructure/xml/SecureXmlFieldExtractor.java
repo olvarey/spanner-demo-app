@@ -35,7 +35,8 @@ public class SecureXmlFieldExtractor implements XmlFieldExtractor {
 
     try {
       Element root =
-          newSecureDocumentBuilder().parse(new InputSource(new StringReader(xmlMessage)))
+          newSecureDocumentBuilder()
+              .parse(new InputSource(new StringReader(xmlMessage)))
               .getDocumentElement();
 
       Map<String, String> fields = new LinkedHashMap<>();

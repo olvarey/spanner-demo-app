@@ -58,7 +58,8 @@ public class ProwidePacs008PayloadParser implements Pacs008PayloadParser {
       throw new MessageValidationException("Message is not a valid pacs.008 document");
     }
 
-    throw new UnsupportedMessageVersionException("Unsupported pacs.008 version: " + mx.getVersion());
+    throw new UnsupportedMessageVersionException(
+        "Unsupported pacs.008 version: " + mx.getVersion());
   }
 
   private Pacs008PayloadData parseV07(MxPacs00800107 mx) {

@@ -59,7 +59,14 @@ public class PubSubSubscriberService {
           "Invalid pacs.008 payload pubSubMessageId={} reason={}",
           pubSubMessageId,
           ex.getMessage());
+    } catch (RuntimeException ex) {
+      log.error(
+          "Unexpected error processing pubSubMessageId={} reason={}",
+          pubSubMessageId,
+          ex.getMessage(),
+          ex);
+    } finally {
+      originalMessage.ack();
     }
-    originalMessage.ack();
   }
 }
