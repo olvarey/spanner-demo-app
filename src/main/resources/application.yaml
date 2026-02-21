@@ -1,6 +1,0 @@
-spring:
-  application:
-    name: spanner-demo-app
-  jpa:
-    hibernate:
-      ddl-auto: update

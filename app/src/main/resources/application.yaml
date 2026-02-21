@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: spanner-demo-app
+  cloud:
+    gcp:
+      project-id: ${GCP_PROJECT_ID:}
+      pubsub:
+        enabled: false
+
+app:
+  pubsub:
+    project-id: ${GCP_PROJECT_ID:}
+    subscription-id: ${GCP_PUBSUB_SUBSCRIPTION:}

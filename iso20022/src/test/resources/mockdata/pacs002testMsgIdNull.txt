@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:iso:std:iso:20022:tech:xsd:pacs.002.001.07">
+    <FIToFIPmtStsRpt>
+        <GrpHdr>
+            <MsgId></MsgId>
+            <CreDtTm>2026-01-09T09:54:26-06:00</CreDtTm>
+            <InstgAgt>
+                <FinInstnId>
+                    <BICFI>SACISVS1</BICFI>
+                </FinInstnId>
+            </InstgAgt>
+        </GrpHdr>
+        <OrgnlGrpInfAndSts>
+            <OrgnlMsgId>SCF240311163806000000012825</OrgnlMsgId>
+            <OrgnlMsgNmId>pacs.008.001.07</OrgnlMsgNmId>
+        </OrgnlGrpInfAndSts>
+        <TxInfAndSts>
+            <StsId>SACISVS10000001367</StsId>
+            <OrgnlInstrId>EPAY</OrgnlInstrId>
+            <OrgnlEndToEndId>VPE645483100000000000000881354</OrgnlEndToEndId>
+            <OrgnlTxId>VPE645483100000000000000881354</OrgnlTxId>
+            <OrgnlTxRef>
+                <IntrBkSttlmAmt Ccy="USD">4.37</IntrBkSttlmAmt>
+                <IntrBkSttlmDt>2024-03-11</IntrBkSttlmDt>
+                <DbtrAcct>
+                    <Id>
+                        <Othr>
+                            <Id>SV34CAGR00000000005488600261</Id>
+                        </Othr>
+                    </Id>
+                </DbtrAcct>
+                <DbtrAgt>
+                    <FinInstnId>
+                        <BICFI>CAGRSVSS</BICFI>
+                    </FinInstnId>
+                </DbtrAgt>
+                <CdtrAgt>
+                    <FinInstnId>
+                        <BICFI>SACISVS1</BICFI>
+                    </FinInstnId>
+                </CdtrAgt>
+                <CdtrAcct>
+                    <Id>
+                        <Othr>
+                            <Id>SV97SACI00002101500044078701</Id>
+                        </Othr>
+                    </Id>
+                </CdtrAcct>
+            </OrgnlTxRef>
+        </TxInfAndSts>
+    </FIToFIPmtStsRpt>
+</Document>
