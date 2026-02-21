@@ -1,1 +1,6 @@
 rootProject.name = 'spanner-demo-app'
+
+include 'app'
+include 'pubsub'
+include 'iso20022'
+include 'commons'

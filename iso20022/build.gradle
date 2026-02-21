@@ -1,0 +1,10 @@
+dependencies {
+  implementation project(':commons')
+  implementation 'org.springframework:spring-context'
+  implementation('com.prowidesoftware:pw-iso20022:SRU2025-10.3.4') {
+    exclude group: 'com.sun.xml.bind', module: 'jaxb-impl'
+    exclude group: 'com.sun.xml.bind', module: 'jaxb-core'
+  }
+  implementation 'org.glassfish.jaxb:jaxb-runtime'
+  implementation 'jakarta.xml.bind:jakarta.xml.bind-api'
+}
